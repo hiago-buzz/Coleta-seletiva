@@ -4,6 +4,7 @@ import Nav from '../Nav/Nav';
 import Banner from '../Banner/Banner';
 import Dicas from '../Dicas/Dicas';
 import Acesso from '../Acesso/Acesso';
+import Noticias from '../Noticias/Noticias';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <Banner />
             <Dicas />
             <Acesso />
+            <Noticias />
         </div>
     )
 }
