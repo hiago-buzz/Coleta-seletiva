@@ -1,6 +1,5 @@
 import React from 'react'
 import './Banner.scss'
-import { directive } from '@babel/types';
 import ImgBanner from '../img/banner.jpeg'
 
 const Banner = () => {
