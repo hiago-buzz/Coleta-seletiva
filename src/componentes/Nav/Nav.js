@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Nav.scss'
+import Botao from '../Botao/Botao';
 
 const Nav = () => {
     return (
@@ -16,8 +17,8 @@ const Nav = () => {
                     <Link to="#">Contatos</Link>
                 </div>
                 <div>
-                    <button>Entrar</button>
-                    <button>Cadastrar</button>
+                    <Botao>Entrar</Botao>
+                    <Botao classe="btn-cadastro">Cadastrar</Botao>
                 </div>
             </nav>
         </div>
