@@ -11,13 +11,13 @@ const Dicas = () => {
                     <h1>POR QUE RECICLAR?</h1>
                 </div>
                 <div className="topic">
-                    <Topico titulo="importância de Reciclar" texto="fndksfnskfndkfndksfnkcxndskfnvkdsndksvnkxvnkvnkvnknvkxcnvkcx" />
-                    <Topico titulo="importância de Reciclar" texto="fndksfnskfndkfndksfnkcxndskfnvkdsndksvnkxvnkvnkvnknvkxcnvkcx" />
+                    <Topico titulo="IMPORTÂNCIA DA RECICLAGEM" texto="fndksfnskfndkfndksfnkcxndskfnvkdsndksvnkxvnkvnkvnknvkxcnvkcx" />
+                    <Topico titulo="COMO DESCARTAR CORRETAMENTE" texto="fndksfnskfndkfndksfnkcxndskfnvkdsndksvnkxvnkvnkvnknvkxcnvkcx" />
                 </div>
                 <div className="topic">
 
-                    <Topico titulo="importância de Reciclar" texto="fndksfnskfndkfndksfnkcxndskfnvkdsndksvnkxvnkvnkvnknvkxcnvkcx" />
-                    <Topico titulo="importância de Reciclar" texto="fndksfnskfndkfndksfnkcxndskfnvkdsndksvnkxvnkvnkvnknvkxcnvkcx" />
+                    <Topico titulo="BENEFICIOS" texto="fndksfnskfndkfndksfnkcxndskfnvkdsndksvnkxvnkvnkvnknvkxcnvkcx" />
+                    <Topico titulo="MELHORANDO SUA CIDADE" texto="fndksfnskfndkfndksfnkcxndskfnvkdsndksvnkxvnkvnkvnknvkxcnvkcx" />
                 </div>
                 </article>
               
