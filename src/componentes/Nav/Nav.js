@@ -11,7 +11,7 @@ const Nav = () => {
                     <h2>COLETA SELETIVA</h2>
                 </div>
                 <div>
-                    <Link to="#">Descrição</Link>
+                    <Link to="#descricao">Descrição</Link>
                     <Link to="#">Dicas</Link>
                     <Link to="#">Pontos de Descarte</Link>
                     <Link to="#">Contatos</Link>

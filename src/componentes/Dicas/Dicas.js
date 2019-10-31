@@ -5,7 +5,7 @@ import Topico from './Topico';
 const Dicas = () => {
     return (
         <div className="Dicas">
-            <section className="descricao">
+            <section id="#descricao" className="descricao">
               <article>
                 <div>
                     <h1>POR QUE RECICLAR?</h1>
