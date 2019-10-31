@@ -5,6 +5,7 @@ import Banner from '../Banner/Banner';
 import Dicas from '../Dicas/Dicas';
 import Acesso from '../Acesso/Acesso';
 import Noticias from '../Noticias/Noticias';
+import Coleta from '../Coleta/Coleta';
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Dicas />
             <Acesso />
             <Noticias />
+            <Coleta />
         </div>
     )
 }

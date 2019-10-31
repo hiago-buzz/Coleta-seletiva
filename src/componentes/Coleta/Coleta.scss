@@ -1,0 +1,39 @@
+.Coleta, .sec, .cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Coleta{
+    width: 100%;
+    
+   
+    section{
+        width: 70%;
+        height: 760px;
+        flex-direction: column;
+
+        .cabecalho{
+            flex-direction: column;
+            h2{
+                font-size: 25pt;
+            }
+            p{
+                font-size: 16pt;
+                text-align: center;
+                text-overflow: clip;
+            }
+        }
+        .locais{
+        
+           
+            div{
+                display: flex;
+                .Postos{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    
+}
