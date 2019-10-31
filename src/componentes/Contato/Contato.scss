@@ -1,0 +1,42 @@
+.Contato, .info, .social, .marca{
+    display: flex;
+    align-items: center;
+}
+.Contato{
+    width: 100%;
+
+    justify-content: center;
+    flex-direction: column;
+    
+    .info{
+        h2{
+            font-size: 16pt;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+        width: 100%;
+        // background-color: #e6e6e6;
+        height: 50px;
+        justify-content: space-around;
+        border-bottom: 5px solid rgb(126, 126, 126);
+        
+        p{
+            font-weight: 600;
+            font-size: 12pt;
+        }
+    }
+    .social{
+        height: 150px;
+        justify-content: space-around;
+        article{
+            width: 400px;
+            
+        }
+
+    }
+    .social, .marca{
+        background-color:#f5f5f5;
+        width: 100%;
+        justify-content:center;
+    }
+    }
