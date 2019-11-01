@@ -16,10 +16,11 @@ const Contato = () => {
                 <p>coleta@coleta.com.br</p>
             </div>
             <div className="social">
-             
-                <Rede imgRede={Facebook} descRede="Facebook"/>
-                <Rede imgRede={Caieiras} descRede="Prefeitura"/>
-                <Rede imgRede={Instagram} descRede="instagram"/>
+                <div>
+                    <Rede imgRede={Facebook} descRede="Facebook"/>
+                    <Rede imgRede={Caieiras} descRede="Prefeitura"/>
+                    <Rede imgRede={Instagram} descRede="instagram"/>
+                </div>
        
             </div>
             <div className="marca">

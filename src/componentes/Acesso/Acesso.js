@@ -1,9 +1,9 @@
-import React from 'react'
-import './Acesso.scss'
-import Nome from '../img/man-user.png'
-import CPF from '../img/new-note.png'
-import Email from '../img/envelope.png'
-import Senha from '../img/lock.png'
+import React from 'react';
+import './Acesso.scss';
+import Nome from '../img/man-user.png';
+import CPF from '../img/new-note.png';
+import Email from '../img/envelope.png';
+import Senha from '../img/lock.png';
 
 const Acesso = ({titulo}) => {
     return (

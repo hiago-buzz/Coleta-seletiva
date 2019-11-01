@@ -12,17 +12,17 @@ const Coleta = () => {
         <div className="Coleta">
             <section className="sec">
                 <div className="cabecalho">
-                    <h2>PONTOS DE COLETA</h2>
+                    <h2>PONTOS DE ENTREGA</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, ea dolorem perferendis laudantium odit dolorum quae.</p>
                 </div>
                 <div className="locais">
                 <div>
-                 <Postos img={Posto1} alt="posto de coleta" endereco="Rua da cacimba nº200" hora="8:30 à 20h" />
-                 <Postos img={Posto2} alt="posto de coleta" endereco="Rua da cacimba nº200" hora="8:30 à 20h" />
+                 <Postos img={Posto1} alt="posto de coleta" endereco="Teatro Municipal" hora="8:30 à 20h" />
+                 <Postos img={Posto2} alt="posto de coleta" endereco="Praça Centro" hora="8:30 à 20h" />
                 </div>
                 <div>
-                 <Postos img={Posto3} alt="posto de coleta" endereco="Rua da cacimba nº200" hora="8:30 à 20h" />
-                 <Postos img={Posto4} alt="posto de coleta" endereco="Rua da cacimba nº200" hora="8:30 à 20h" />
+                 <Postos img={Posto3} alt="posto de coleta" endereco="Polo centro" hora="8:30 à 20h" />
+                 <Postos img={Posto4} alt="posto de coleta" endereco="Praça da Biblia" hora="8:30 à 20h" />
                 </div>
                 </div>
             </section>
