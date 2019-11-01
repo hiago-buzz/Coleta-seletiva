@@ -23,7 +23,7 @@ const Contato = () => {
        
             </div>
             <div className="marca">
-                <p>@caieiras 2019</p>
+                <p>Copyright © 2019 Gaia Caieiras. Todos os direitos reservados </p>
             </div>
         </div>
     )
