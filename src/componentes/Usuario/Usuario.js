@@ -4,18 +4,25 @@ import Info from './Info';
 
 
 
-const Usuario = () => {
+const Usuario = ({editando}) => {
 
-    const [data, setData] = React.useState({})
-
-    const id = localStorage.getItem("id");
-
-    React.useEffect(() => {
-        buscaPerfil();
-    }, []);
+        
+        const [data, setData] = React.useState({})
+        
+        const id = localStorage.getItem("id");
+        
+        
+        React.useEffect(() => {
+            
+            buscaPerfil();
+        }, []);
+    
+    
+   
 
     const buscaPerfil = () => {
-        fetch('http://localhost:8000/api/coletor/' + id + '/')
+        fetch(`http://localhost:8000/api/coletor/${id}/`)
+        
         .then(result => {
             return result.json()
         }).then(data =>{
@@ -27,12 +34,17 @@ const Usuario = () => {
        <div className="Usuario">
            <section>
                <h2>Seja Bem Vindo, José</h2>
-               <form action="#">
-                    <input type="text" value={data.nome}/>
-                    <input type="text" value={data.cpf}/>
-                    <input type="email" value={data.email}/>
-                    <input type="password" value={data.senha}/>
-                    <input type="submit" value="Salvar"/>
+               <form>
+                    <input type="text"  value={data.nome} required/>
+                    <input type="text"  value={data.cpf} required/>
+                    <input type="email" value={data.email} required/>
+                    <input type="password" value={data.senha} required/>
+                    <div>
+                    {/* <input type="button" value="mostrar" /> */}
+                    </div>
+                   {/* <input type="button" value="Editar"/> */}
+                    <input type="submit" value="Salvar"/> 
+                    
                </form>
            </section>
            <aside>

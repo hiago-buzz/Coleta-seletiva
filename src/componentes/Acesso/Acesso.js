@@ -13,7 +13,7 @@ const Acesso = ({titulo}) => {
 
     const criarColetor = (event) => {
         event.preventDefault();
-
+        
         fetch('http://127.0.0.1:8000/api/coletor/', {
             method: 'POST',
             body: JSON.stringify({
@@ -56,7 +56,7 @@ const Acesso = ({titulo}) => {
                     <input type="text" ref={nomeRef} placeholder="    Nome" required />
                     </div>
                     <img src={CPF} alt="cpf"/>
-                    <input type="text" ref={cpfRef} placeholder="    CPF" required />
+                    <input name="cpf" type="text" ref={cpfRef} placeholder="    CPF" required  />
                 </div>
                 <div className="ipt-register">
                 <img src={Email} alt="email"/>
