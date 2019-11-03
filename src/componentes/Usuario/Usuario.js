@@ -5,15 +5,33 @@ import Info from './Info';
 
 
 const Usuario = () => {
+
+    const [data, setData] = React.useState({})
+
+    const id = localStorage.getItem("id");
+
+    React.useEffect(() => {
+        buscaPerfil();
+    }, []);
+
+    const buscaPerfil = () => {
+        fetch('http://localhost:8000/api/coletor/' + id + '/')
+        .then(result => {
+            return result.json()
+        }).then(data =>{
+        setData(data);
+        })
+    }
+
     return (
        <div className="Usuario">
            <section>
                <h2>Seja Bem Vindo, José</h2>
                <form action="#">
-                    <input type="text"/>
-                    <input type="text"/>
-                    <input type="email"/>
-                    <input type="password"/>
+                    <input type="text" value={data.nome}/>
+                    <input type="text" value={data.cpf}/>
+                    <input type="email" value={data.email}/>
+                    <input type="password" value={data.senha}/>
                     <input type="submit" value="Salvar"/>
                </form>
            </section>

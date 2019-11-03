@@ -6,6 +6,7 @@ import Caieiras from '../img/caieiras.png'
 import Instagram from '../img/instagram.png'
 
 const Contato = () => {
+  
     return (
         <div className="Contato">
             <div className="info">
@@ -17,9 +18,9 @@ const Contato = () => {
             </div>
             <div className="social">
                 <div>
-                    <Rede imgRede={Facebook} descRede="Facebook"/>
-                    <Rede imgRede={Caieiras} descRede="Prefeitura"/>
-                    <Rede imgRede={Instagram} descRede="instagram"/>
+                    <Rede linkRedirect="https://www.facebook.com.br/prefeituradecaieiras/" imgRede={Facebook} descRede="Facebook"/>
+                    <Rede linkRedirect="https://www.caieiras.sp.gov.br" imgRede={Caieiras} descRede="Prefeitura"/>
+                    <Rede linkRedirect="https://www.instagram.com/prefeituradecaieiras/" imgRede={Instagram} descRede="instagram"/>
                 </div>
        
             </div>
