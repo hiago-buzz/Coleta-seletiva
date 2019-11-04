@@ -66,3 +66,13 @@
                 }
     }
 }
+
+@media(max-width:425px){
+    .Acesso{
+        flex-direction: column;
+        height: 120vh;
+        section{
+            width: 80%;
+        }
+    }
+}

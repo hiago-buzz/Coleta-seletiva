@@ -44,6 +44,8 @@ const Nav = () => {
                 <Link onClick={FecharMenu} to="Dicas" spy={true} smooth={true} offset={-70} duration={500}>Dicas</Link>
                 <Link onClick={FecharMenu} to="Noticias" spy={true} smooth={true} offset={-70} duration={500}>Noticias</Link>
                 <Link onClick={FecharMenu} to="Coleta" spy={true} smooth={true} offset={-70} duration={500}>Pontos de Descarte</Link>
+                <Link onClick={FecharMenu} to="Acesso" spy={true} smooth={true} offset={-70} duration={500}>Cadastrar</Link>
+                <Link onClick={FecharMenu} to="Acesso" spy={true} smooth={true} offset={-70} duration={500}>Entrar</Link>
             </section>
             </nav>
         </div>
