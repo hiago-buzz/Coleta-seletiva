@@ -37,3 +37,21 @@
     }
     }
 }
+
+@media(max-width:320px){
+    .Dicas{
+        .descricao{
+            height: 850px;
+            article{
+                div{
+                    h1{
+                        font-size: 20pt;
+                    }
+                }
+            }
+        }
+        .topic{
+            flex-direction: column;
+        }
+    }
+}

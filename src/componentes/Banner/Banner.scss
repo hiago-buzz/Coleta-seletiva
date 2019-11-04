@@ -8,3 +8,14 @@
         height: 677px;
     }
 }
+
+@media(max-width: 425px){
+    .Banner{
+        
+        height: 300px;
+        
+        img{
+            height: 300px;
+        }
+    }
+}
