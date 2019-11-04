@@ -21,11 +21,12 @@
     }
 }
 
-// @media(max-width: 320px0){
-//     .Postos{
-//         img{
-//             width: 200px;
-//         height: 50px;
-//         }
-//     }
-// }
+@media(max-width: 320px0){
+    .Postos {
+        
+        img {
+            width: 320px;
+            height: 205px;
+        }
+    }
+}
