@@ -54,3 +54,21 @@
         }
     }
     }
+
+    @media(max-width:425px){
+        .Contato{
+            .info{
+                flex-direction: column;
+                height: 200px;
+                justify-content: space-around;
+               
+                h2{
+                    display: none;
+                }
+                
+              .marca{
+                margin-right: 0px;
+              }
+        }
+    }
+}
