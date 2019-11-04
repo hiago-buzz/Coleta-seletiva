@@ -38,8 +38,9 @@
     }
 }
 
-@media(max-width:320px){
+@media(max-width:425px){
     .Dicas{
+        width: 100%;
         .descricao{
             height: 850px;
             article{

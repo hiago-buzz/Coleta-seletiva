@@ -1,4 +1,7 @@
 .Nav{
+    .menu{
+        display: none;
+    }
     nav{
         position: fixed;
         width: 100%;
@@ -44,13 +47,34 @@
     }
 }
 
-@media(max-width:(320px)){
+@media(max-width:(425px)){
+
     .Nav{
+       .menu{
+           margin-top: 150px;
+           display: flex;
+           justify-content: space-around;
+           transform: translatex(-100%);
+           transition: 0.4s;
+           flex-direction: column;
+           position: absolute;
+           height: 230px;
+           width: 100%;
+           background-color: #5abe4f;
+           a{
+               color: white;
+               font-weight: 600;
+           }
+       }
+       .ativo {
+        transform: translateX(0);
+      }
         nav{
-            width:320px;
+            width:425px;
             .Ancoras{
                 a{
                     display: none;
+                    margin-left: 0px;
                 }
             }
             div{

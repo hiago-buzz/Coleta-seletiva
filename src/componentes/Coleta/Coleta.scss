@@ -39,7 +39,8 @@
 }
 
 
-@media(max-width: 320px){
+@media(max-width: 425px){
+
     .Coleta{
         .sec{
             width: 100%;
@@ -49,6 +50,8 @@
                   font-size: 16pt;
                 }
                 p{
+                    margin: 0%;
+                    padding: 0% 20px;
                     font-size: 15px;
                 }
             }

@@ -16,3 +16,27 @@
     }
 
 }
+
+@media(max-width: 425px){
+   .Noticias{
+       flex-direction: column;
+      
+       height: 100vh;
+       div{
+           width: 100%;
+       }
+       h3{
+           font-size: 16pt;
+           text-align: center;
+
+       }
+       p{
+           font-size: 10pt;
+           padding: 0 20px;
+           text-align: center;
+       }
+       img{
+           width: 100%;
+       }
+   }
+}
