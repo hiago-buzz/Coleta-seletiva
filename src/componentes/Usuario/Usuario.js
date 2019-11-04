@@ -39,14 +39,7 @@ const Usuario = ({editando}) => {
                     <input type="text"  value={data.cpf} required/>
                     <input type="email" value={data.email} required/>
                     <input type="password" value={data.senha} required/>
-
-
-                    <div>
-                    {/* <input type="button" value="mostrar" /> */}
-                    </div>
-                   {/* <input type="button" value="Editar"/> */}
-                    <input type="submit" value="Salvar"/> 
-                    
+                    <input type="submit" value="Salvar"/>       
                </form>
                    
            </section>
