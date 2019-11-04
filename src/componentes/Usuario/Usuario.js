@@ -29,16 +29,18 @@ const Usuario = ({editando}) => {
         setData(data);
         })
     }
-
+  
     return (
        <div className="Usuario">
            <section>
-               <h2>Seja Bem Vindo, José</h2>
+               <h2>Seja Bem Vindo, {data.nome}</h2>
                <form>
                     <input type="text"  value={data.nome} required/>
                     <input type="text"  value={data.cpf} required/>
                     <input type="email" value={data.email} required/>
                     <input type="password" value={data.senha} required/>
+
+
                     <div>
                     {/* <input type="button" value="mostrar" /> */}
                     </div>
@@ -46,6 +48,7 @@ const Usuario = ({editando}) => {
                     <input type="submit" value="Salvar"/> 
                     
                </form>
+                   
            </section>
            <aside>
                <h2>INFORMAÇÕES</h2>
