@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import "./Usuario.scss"
 import Info from './Info';
 import {Link} from "react-scroll"
@@ -7,17 +7,20 @@ import {Link} from "react-scroll"
 const Usuario = () => {
 
         
-        const [data, setData] = React.useState({})
-        
+        const [data, setData] = useState({})
+        const [mostrar, setMostrar] = useState(false)        
+        const [checked, setChecked] = useState(false)        
         const id = localStorage.getItem("id");
         
         
-        React.useEffect(() => {
-            
+        useEffect(() => {
             buscaPerfil();
         }, []);
-    
-    
+        
+        const MostrarSenha = () => {
+          setMostrar(!mostrar);
+        };
+      
    
 
     const buscaPerfil = () => {
@@ -42,7 +45,11 @@ const Usuario = () => {
                     <input type="text"  value={data.nome} required/>
                     <input type="text"  value={data.cpf} required/>
                     <input type="email" value={data.email} required/>
-                    <input type="password" value={data.senha} required/>
+                    <input type={(mostrar ? "text" : "password")} value={data.senha} required/>
+                    <div>
+                    <input type="checkbox" value="mostrar senha"   onChange={MostrarSenha} required/>
+                    <label htmlFor="mostrar-senha">Mostrar senha</label>
+                    </div>
                     <input type="submit" value="Salvar"/>       
                </form>
                    

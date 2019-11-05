@@ -5,7 +5,7 @@ import CPF from '../img/new-note.png';
 import Email from '../img/envelope.png';
 import Senha from '../img/lock.png';
 
-const Acesso = ({titulo}) => {
+const Acesso = () => {
     const nomeRef = React.useRef("");
     const cpfRef = React.useRef("");
     const emailRef = React.useRef("");

@@ -52,6 +52,23 @@
                     cursor: pointer;
                 }
             }
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                width: 400px;
+                input{
+                    cursor: pointer;
+                    width: 15px;
+                    height: 15px;
+                    margin: 0%;
+                }
+                label{
+                    font-size: 10pt;
+                    margin: 0%;
+
+                }
+              }
         }
     }
     aside{
@@ -84,7 +101,9 @@
                 input{
                     width: 280px;
                 }
-    
+                div{
+                    width: 280px;
+                }
             }
         }       
     }

@@ -21,7 +21,7 @@ const Nav = () => {
         <div className="Nav">
             <nav>
                 <div>
-                <Link to="Nav" spy={true} smooth={true} offset={-70} duration={500}><img src={Logo} alt="logo"/></Link>
+                {/* <Link to="Nav" spy={true} smooth={true} offset={-70} duration={500}><img src={Logo} alt="logo"/></Link> */}
                 </div>
                 <div className="Ancoras">
                    
