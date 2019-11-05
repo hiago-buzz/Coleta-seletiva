@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import './Nav.scss'
-import {Link, animateScroll as scroll} from "react-scroll"
+import {Link} from "react-scroll"
 import Botao from '../Botao/Botao';
 
 const Nav = () => {
@@ -25,8 +25,8 @@ const Nav = () => {
                 <div className="Ancoras">
                     <Link to="Nav" spy={true} smooth={true} offset={-70} duration={500}>Home</Link>
                     <Link to="Dicas" spy={true} smooth={true} offset={-70} duration={500}>Dicas</Link>
+                    <Link to="Coleta" spy={true} smooth={true} offset={-70} duration={500}>Pontos de Entrega</Link>
                     <Link to="Noticias" spy={true} smooth={true} offset={-70} duration={500}>Noticias</Link>
-                    <Link to="Coleta" spy={true} smooth={true} offset={-70} duration={500}>Pontos de Descarte</Link>
                     
                     <Link to="Contato" spy={true} smooth={true} offset={-70} duration={500}>Contatos</Link>
                     <Link to="Acesso" spy={true} smooth={true} offset={-70} duration={500}> <Botao classe="btn-cadastro">Cadastrar</Botao></Link>
@@ -42,8 +42,8 @@ const Nav = () => {
               
                 <Link onClick={FecharMenu} to="Nav" spy={true} smooth={true} offset={-70} duration={500}>Home</Link>
                 <Link onClick={FecharMenu} to="Dicas" spy={true} smooth={true} offset={-70} duration={500}>Dicas</Link>
+                <Link onClick={FecharMenu} to="Coleta" spy={true} smooth={true} offset={-70} duration={500}>Pontos de Entrega</Link>
                 <Link onClick={FecharMenu} to="Noticias" spy={true} smooth={true} offset={-70} duration={500}>Noticias</Link>
-                <Link onClick={FecharMenu} to="Coleta" spy={true} smooth={true} offset={-70} duration={500}>Pontos de Descarte</Link>
                 <Link onClick={FecharMenu} to="Acesso" spy={true} smooth={true} offset={-70} duration={500}>Cadastrar</Link>
                 <Link onClick={FecharMenu} to="Acesso" spy={true} smooth={true} offset={-70} duration={500}>Entrar</Link>
             </section>

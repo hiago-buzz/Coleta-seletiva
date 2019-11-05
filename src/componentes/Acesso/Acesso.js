@@ -51,12 +51,14 @@ const Acesso = ({titulo}) => {
                 <h3>CADASTRO COLETOR</h3>
                 <form onSubmit={criarColetor}>
                 <div className="ipt-register">
-                    <div>
+                    <div className="nome-cpf">
                     <img src={Nome} alt="user"/>
                     <input type="text" ref={nomeRef} placeholder="    Nome" required />
                     </div>
+                    <div className="nome-cpf">   
                     <img src={CPF} alt="cpf"/>
                     <input name="cpf" type="text" ref={cpfRef} placeholder="    CPF" required  />
+                    </div>
                 </div>
                 <div className="ipt-register">
                 <img src={Email} alt="email"/>

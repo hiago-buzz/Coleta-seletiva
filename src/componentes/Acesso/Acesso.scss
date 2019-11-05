@@ -69,10 +69,47 @@
 
 @media(max-width:425px){
     .Acesso{
+        form{
+           
+            .ipt-register{
+              input{
+                  width: 200px;
+  
+              }
+                &:nth-child(1){
+                      
+                    flex-direction: column;
+                }
+              
+            }}
+        
         flex-direction: column;
         height: 120vh;
         section{
             width: 80%;
+        }
+    }
+}
+
+@media(max-width:320px){
+    .Acesso{
+        form{
+           
+          .ipt-register{
+            input{
+                width: 200px;
+
+            }
+              &:nth-child(1){
+                    
+                  flex-direction: column;
+              }
+            
+          }
+
+            .ipt{
+                width: 200px;
+            }
         }
     }
 }

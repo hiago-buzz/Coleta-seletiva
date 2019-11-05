@@ -29,8 +29,9 @@
         height: 150px;
         justify-content: space-around;
         flex-direction: column;
-        div{
+        .icones-redes{
             display: flex;
+            justify-content: space-around;
             align-items: center;
             width: 400px;
             
@@ -47,7 +48,7 @@
         justify-content:center;
     }
     .marca{
-        margin-right: 80px;
+       
         flex-direction: column;
         iframe{
             margin-bottom: 10px;
@@ -58,6 +59,7 @@
     @media(max-width:425px){
         .Contato{
             .info{
+                background-color: #5abe4f52;
                 flex-direction: column;
                 height: 200px;
                 justify-content: space-around;
@@ -67,8 +69,22 @@
                 }
                 
               .marca{
-                margin-right: 0px;
-              }
+                margin-right: 0;
+            }
+        }
+                        .copyright{
+                          text-align: center;
+                          font-size: 8pt;
+                        }
+    }
+}
+
+@media(max-width:320px){
+    .Contato{
+        .social{
+            .icones-redes{
+                width: 270px;
+            }
         }
     }
 }
