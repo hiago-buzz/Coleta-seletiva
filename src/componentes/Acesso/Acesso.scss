@@ -73,15 +73,19 @@
            
             .ipt-register{
               input{
-                  width: 200px;
-  
+                  width: 275px;
+                  margin-right:0px;
               }
                 &:nth-child(1){
                       
                     flex-direction: column;
                 }
               
-            }}
+            }
+            .ipt{
+                margin-right:0px;
+            }
+        }
         
         flex-direction: column;
         height: 120vh;
@@ -98,7 +102,7 @@
           .ipt-register{
             input{
                 width: 200px;
-
+               
             }
               &:nth-child(1){
                     
