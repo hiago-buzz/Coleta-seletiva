@@ -16,7 +16,6 @@ const Acesso = () => {
     const MostrarSenha = () => {
         setMostrar(!mostrar);
     };
-    
 
     const criarColetor = (event) => {
         event.preventDefault();
@@ -60,11 +59,11 @@ const Acesso = () => {
                 <div className="ipt-register">
                     <div className="nome-cpf">
                     <img src={Nome} alt="user"/>
-                    <input type="text" ref={nomeRef} placeholder="    Nome" required />
+                    <input type="text" ref={nomeRef} placeholder="    Nome Completo" required />
                     </div>
                     <div className="nome-cpf">   
                     <img src={CPF} alt="cpf"/>
-                    <input name="cpf" type="text" ref={cpfRef} placeholder="    CPF" required  />
+                    <input name="cpf" maxlength="11" type="text" ref={cpfRef} placeholder="    CPF" pattern="[0-9]{11}" title="Este campo deve conter 11 números" required  />
                     </div>
                 </div>
                 <div className="ipt-register">
@@ -73,7 +72,7 @@ const Acesso = () => {
                 </div>
                 <div className="ipt-register">
                 <img src={Senha} alt="senha"/>
-                <input className="ipt" ref={senhaRef} placeholder="    Senha" type="password" required />
+                <input className="ipt" ref={senhaRef} placeholder="    Senha" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Sua senha deve conter  8 ou mais caracteres com pelo menos um número e uma letra maiúscula e minúscula"/>
                 </div>
                
                 <input className="ipt-sub" type="submit" value="Cadastrar"/>
@@ -89,10 +88,10 @@ const Acesso = () => {
                     </div>
                     <div>
                         <img src={Senha} alt="senha"/>
-                        <input className="ipt" placeholder="    Senha" type={(mostrar ? "text" : "password")}/>
+                        <input className="ipt" placeholder="    Senha" type={(mostrar ? "text" : "password")} pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Sua senha deve conter  8 ou mais caracteres com pelo menos um número e uma letra maiúscula e minúscula"/>
                     </div>
                     <div className="checkSenha">
-                        <input type="checkbox" value="mostrar senha"   onChange={MostrarSenha} required/>
+                        <input type="checkbox" value="mostrar senha"   onChange={MostrarSenha}/>
                         <label htmlFor="mostrar-senha">Mostrar senha</label>
                     </div>
                         <input className="ipt-sub" type="submit" value="Entrar"/>

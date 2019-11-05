@@ -5,50 +5,47 @@ import {Link} from "react-scroll"
 
 
 const Usuario = () => {
-
         
     const [data, setData] = useState({})
     const [mostrar, setMostrar] = useState(false)              
-    const id = localStorage.getItem("id");
-    
-    
-    useEffect(() => {
-        buscaPerfil();
-    }, []);
-    
+    const [editando, setEditando] = useState(false)
+    const id = localStorage.getItem("id"); 
+
     const MostrarSenha = () => {
         setMostrar(!mostrar);
     };
-    
-   
 
-    const buscaPerfil = () => {
-        fetch(`http://localhost:8000/api/coletor/${id}/`)
-        
-        .then(result => {
-            return result.json()
-        }).then(data =>{
-        setData(data);
+    useEffect(() => {
+        fetch(`http://localhost:8000/api/coletor/${id}/`, {
+        method:"GET"
+        }).then(result => {
+          return result.json()
+        }).then(data => {
+            setData(data)
+       }).catch(() => {
+          console.error("Erro, sem conexão")
         })
-    }
+      }, [id])  
+
+  
   
     return (
        <div className="Usuario">
            <header>
-                <Link to="section">Editar</Link>
-                <Link to="aside">Informações</Link>
+                <Link to="#">Editar</Link>
+                <Link to={Info}>Informações</Link>
            </header>
            <section id="editar">
                <h2>Seja Bem Vindo, {data.nome}</h2>
                <form>
                     <input type="text"  value={data.nome} required/>
-                    <input type="text"  value={data.cpf} required/>
+                    <input type="text"  value={data.cpf} maxlength="11" required/>
                     <input type="email" value={data.email} required/>
                     <input type={(mostrar ? "text" : "password")} value={data.senha} required/>
                     <div>
-                    <input type="checkbox" value="mostrar senha"   onChange={MostrarSenha} required/>
+                    <input type="checkbox" value="mostrar senha" onChange={MostrarSenha}/>
                     <label htmlFor="mostrar-senha">Mostrar senha</label>
-                    </div>
+                    </div>     
                     <input type="submit" value="Salvar"/>       
                </form>
                    
@@ -56,7 +53,7 @@ const Usuario = () => {
            <aside id="informacoes">
                <h2>INFORMAÇÕES</h2>
                <div>
-                   <Info spy={true} smooth={true} offset={-70} duration={500} assunto="Horario de Coleta" conteudo="Todas as coletas devem ser realizadas de Segunda, QUarta e Sexta das 8 as 16h e entregue na Rua Antonio Manoel da Costa." />
+                   <Info assunto="Horario de Coleta" conteudo="Todas as coletas devem ser realizadas de Segunda, QUarta e Sexta das 8 as 16h e entregue na Rua Antonio Manoel da Costa." />
                    <Info assunto="Normas de atuação" conteudo="Todas as coletas devem ser realizadas de Segunda, QUarta e Sexta das 8 as 16h e entregue na Rua Antonio Manoel da Costa." />
                </div>   
 
