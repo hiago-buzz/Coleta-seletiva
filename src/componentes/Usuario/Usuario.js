@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Usuario.scss"
 import Info from './Info';
+import {Link} from "react-scroll"
 
 
-
-const Usuario = ({editando}) => {
+const Usuario = () => {
 
         
         const [data, setData] = React.useState({})
@@ -32,7 +32,11 @@ const Usuario = ({editando}) => {
   
     return (
        <div className="Usuario">
-           <section>
+           <header>
+                <Link to="section">Editar</Link>
+                <Link to="aside">Informações</Link>
+           </header>
+           <section id="editar">
                <h2>Seja Bem Vindo, {data.nome}</h2>
                <form>
                     <input type="text"  value={data.nome} required/>
@@ -43,10 +47,10 @@ const Usuario = ({editando}) => {
                </form>
                    
            </section>
-           <aside>
+           <aside id="informacoes">
                <h2>INFORMAÇÕES</h2>
                <div>
-                   <Info assunto="Horario de Coleta" conteudo="Todas as coletas devem ser realizadas de Segunda, QUarta e Sexta das 8 as 16h e entregue na Rua Antonio Manoel da Costa." />
+                   <Info spy={true} smooth={true} offset={-70} duration={500} assunto="Horario de Coleta" conteudo="Todas as coletas devem ser realizadas de Segunda, QUarta e Sexta das 8 as 16h e entregue na Rua Antonio Manoel da Costa." />
                    <Info assunto="Normas de atuação" conteudo="Todas as coletas devem ser realizadas de Segunda, QUarta e Sexta das 8 as 16h e entregue na Rua Antonio Manoel da Costa." />
                </div>   
 
