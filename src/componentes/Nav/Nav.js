@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './Nav.scss'
 import {Link} from "react-scroll"
 import Botao from '../Botao/Botao';
-import Logo from '../img/logo.png'
+import Logo from '../img/logo-inteira-verde-modificado.png'
 
 const Nav = () => {
 
@@ -21,7 +21,7 @@ const Nav = () => {
         <div className="Nav">
             <nav>
                 <div>
-                {/* <Link to="Nav" spy={true} smooth={true} offset={-70} duration={500}><img src={Logo} alt="logo"/></Link> */}
+                <Link to="Nav" spy={true} smooth={true} offset={-70} duration={500}><img src={Logo} alt="logo"/></Link>
                 </div>
                 <div className="Ancoras">
                    

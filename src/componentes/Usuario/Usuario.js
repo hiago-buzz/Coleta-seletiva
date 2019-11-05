@@ -32,8 +32,7 @@ const Usuario = () => {
     return (
        <div className="Usuario">
            <header>
-                <Link to="#">Editar</Link>
-                <Link to={Info}>Informações</Link>
+                <Link to="/">Voltar</Link>
            </header>
            <section id="editar">
                <h2>Seja Bem Vindo, {data.nome}</h2>

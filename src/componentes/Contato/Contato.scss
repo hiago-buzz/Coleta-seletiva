@@ -9,10 +9,10 @@
     flex-direction: column;
     
     .info{
-        h2{
-            font-size: 16pt;
-            padding-left: 35px;
-            padding-right: 35px;
+        img{
+            width: 150px;
+            // padding-left: 35px;
+            // padding-right: 35px;
         }
         width: 100%;
         // background-color: #e6e6e6;
@@ -64,7 +64,7 @@
                 height: 200px;
                 justify-content: space-around;
                
-                h2{
+                img{
                     display: none;
                 }
                 

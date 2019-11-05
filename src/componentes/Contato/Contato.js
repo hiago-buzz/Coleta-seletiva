@@ -4,6 +4,9 @@ import Rede from './Rede';
 import Facebook from '../img/facebook.png'
 import Caieiras from '../img/caieiras.png'
 import Instagram from '../img/instagram.png'
+import Logo from '../img/logo-inteira-verde-modificado.png'
+import {Link} from "react-scroll"
+
 
 
 const Contato = () => {
@@ -11,9 +14,9 @@ const Contato = () => {
     return (
         <div className="Contato">
             <div className="info">
-                <p>mobile app</p>
+                <Link to="/chamada"><p>Solicitação de Coleta em Lote</p></Link>
                 <p>Caieiras - São Paulo</p>
-                <h2>COLETA SELETIVA</h2>
+                <Link to="Nav" spy={true} smooth={true} offset={-70} duration={500}><img src={Logo} alt="logo"/></Link>
                 <p>(11) 4445-9200</p>
                 <p>coleta@coleta.com.br</p>
             </div>
