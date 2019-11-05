@@ -64,6 +64,26 @@
                     border: none;
                     cursor: pointer;
                 }
+                .checkSenha{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    width: 300px;
+                    margin:10px;
+                    input{
+                        cursor: pointer;
+                        width: 15px;
+                        height: 15px;
+                        margin: 0%;
+                    }
+                    label{
+                        font-size: 10pt;
+                        margin: 0%;
+                        color:#747474;
+
+    
+                    }
+                  }
     }
 }
 
@@ -114,6 +134,10 @@
             .ipt{
                 width: 200px;
             }
+
+        .checkSenha{
+            width: 220px;
+        }
         }
     }
 }

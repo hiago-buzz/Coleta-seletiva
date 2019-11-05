@@ -7,20 +7,19 @@ import {Link} from "react-scroll"
 const Usuario = () => {
 
         
-        const [data, setData] = useState({})
-        const [mostrar, setMostrar] = useState(false)        
-        const [checked, setChecked] = useState(false)        
-        const id = localStorage.getItem("id");
-        
-        
-        useEffect(() => {
-            buscaPerfil();
-        }, []);
-        
-        const MostrarSenha = () => {
-          setMostrar(!mostrar);
-        };
-      
+    const [data, setData] = useState({})
+    const [mostrar, setMostrar] = useState(false)              
+    const id = localStorage.getItem("id");
+    
+    
+    useEffect(() => {
+        buscaPerfil();
+    }, []);
+    
+    const MostrarSenha = () => {
+        setMostrar(!mostrar);
+    };
+    
    
 
     const buscaPerfil = () => {

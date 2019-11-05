@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Acesso.scss';
 import Nome from '../img/man-user.png';
 import CPF from '../img/new-note.png';
@@ -10,6 +10,13 @@ const Acesso = () => {
     const cpfRef = React.useRef("");
     const emailRef = React.useRef("");
     const senhaRef = React.useRef("");
+
+    const [mostrar, setMostrar] = useState(false)              
+
+    const MostrarSenha = () => {
+        setMostrar(!mostrar);
+    };
+    
 
     const criarColetor = (event) => {
         event.preventDefault();
@@ -68,7 +75,7 @@ const Acesso = () => {
                 <img src={Senha} alt="senha"/>
                 <input className="ipt" ref={senhaRef} placeholder="    Senha" type="password" required />
                 </div>
-                
+               
                 <input className="ipt-sub" type="submit" value="Cadastrar"/>
                
                 </form>
@@ -82,9 +89,13 @@ const Acesso = () => {
                     </div>
                     <div>
                         <img src={Senha} alt="senha"/>
-                        <input className="ipt" placeholder="    Senha" type="password"/>
+                        <input className="ipt" placeholder="    Senha" type={(mostrar ? "text" : "password")}/>
                     </div>
-                <input className="ipt-sub" type="submit" value="Entrar"/>
+                    <div className="checkSenha">
+                        <input type="checkbox" value="mostrar senha"   onChange={MostrarSenha} required/>
+                        <label htmlFor="mostrar-senha">Mostrar senha</label>
+                    </div>
+                        <input className="ipt-sub" type="submit" value="Entrar"/>
                 </form>
             </section>
         </div>
