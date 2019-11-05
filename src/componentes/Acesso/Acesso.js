@@ -72,7 +72,7 @@ const Acesso = () => {
                 <div className="ipt-register">
                     <img src={Local} alt="localização"/>
                     <select className="option" ref={bairroRef} name="Bairro" >
-                        <option value="Seclecione">Seclecione</option>
+                        <option value="Bairro de atuação">Bairro de Atuação</option>
                         <option value="Centro">Centro</option>
                         <option value="Laranjeiras">Laranjeiras</option>
                         <option value="Nova Era">Nova Era</option>
