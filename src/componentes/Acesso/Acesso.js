@@ -4,10 +4,12 @@ import Nome from '../img/man-user.png';
 import CPF from '../img/new-note.png';
 import Email from '../img/envelope.png';
 import Senha from '../img/lock.png';
+import Local from '../img/local.png';
 
 const Acesso = () => {
     const nomeRef = React.useRef("");
     const cpfRef = React.useRef("");
+    const bairroRef = React.useRef("");
     const emailRef = React.useRef("");
     const senhaRef = React.useRef("");
 
@@ -25,6 +27,7 @@ const Acesso = () => {
             body: JSON.stringify({
                 nome: nomeRef.current.value,
                 cpf: cpfRef.current.value,
+                bairro: bairroRef.current.value,
                 email: emailRef.current.value,
                 senha: senhaRef.current.value,
             }),
@@ -65,6 +68,17 @@ const Acesso = () => {
                     <img src={CPF} alt="cpf"/>
                     <input name="cpf" maxlength="11" type="text" ref={cpfRef} placeholder="    CPF" pattern="[0-9]{11}" title="Este campo deve conter 11 números" required  />
                     </div>
+                </div>
+                <div className="ipt-register">
+                    <img src={Local} alt="localização"/>
+                    <select className="option" ref={bairroRef} name="Bairro" >
+                        <option value="Seclecione">Seclecione</option>
+                        <option value="Centro">Centro</option>
+                        <option value="Laranjeiras">Laranjeiras</option>
+                        <option value="Nova Era">Nova Era</option>
+                        <option value="Nova Caieiras">Nova Caieiras</option>
+                        <option value="Serpa">Serpa</option>
+                    </select>
                 </div>
                 <div className="ipt-register">
                 <img src={Email} alt="email"/>

@@ -8,7 +8,6 @@ const Usuario = () => {
         
     const [data, setData] = useState({})
     const [mostrar, setMostrar] = useState(false)              
-    const [editando, setEditando] = useState(false)
     const id = localStorage.getItem("id"); 
 
     const MostrarSenha = () => {
@@ -39,6 +38,7 @@ const Usuario = () => {
                <form>
                     <input type="text"  value={data.nome} required/>
                     <input type="text"  value={data.cpf} maxlength="11" required/>
+                    <input type="text" value={data.bairro} required/>
                     <input type="email" value={data.email} required/>
                     <input type={(mostrar ? "text" : "password")} value={data.senha} required/>
                     <div>
