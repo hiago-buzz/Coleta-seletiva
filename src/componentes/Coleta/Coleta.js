@@ -16,11 +16,11 @@ const Coleta = () => {
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, ea dolorem perferendis laudantium odit dolorum quae.</p>
                 </div>
                 <div className="locais">
-                <div>
+                <div className="local-posto">
                  <Postos img={Posto1} alt="posto de coleta" endereco="Teatro Municipal" hora="8:30 à 20h" />
                  <Postos img={Posto2} alt="posto de coleta" endereco="Praça Centro" hora="8:30 à 20h" />
                 </div>
-                <div>
+                <div className="local-posto">
                  <Postos img={Posto3} alt="posto de coleta" endereco="Polo centro" hora="8:30 à 20h" />
                  <Postos img={Posto4} alt="posto de coleta" endereco="Praça da Biblia" hora="8:30 à 20h" />
                 </div>

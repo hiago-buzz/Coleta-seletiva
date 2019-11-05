@@ -27,13 +27,13 @@
             }
         }
         .locais{
-        
-           
+         
             div{
                 width: 100%;
                 display: flex;
                 .Postos{
-                    margin-left: 10px;
+                    width: 100%;
+                    padding-left: 20px;
                 }
             }
         }
@@ -62,21 +62,15 @@
                 div{
 
                     flex-direction: column;
+                    .Postos{
+                    
+                
+                        padding-left: 0px;
+                    
+                }
                 }
             }
             
-        }
-    }
-}
-@media(max-width: 320px){
-    .Coleta{
-        .locais{
-            div{
-                .Postos{
-
-                    width: 320px;
-                }
-            }
         }
     }
 }
