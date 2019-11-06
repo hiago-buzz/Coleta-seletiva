@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import "./Usuario.scss"
 import Info from './Info';
-import {Link} from "react-scroll"
+import {Link} from "react-router-dom"
 import Voltar from "../img/back.png"
 
 const Usuario = () => {

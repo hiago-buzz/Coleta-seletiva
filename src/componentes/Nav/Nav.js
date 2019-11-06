@@ -3,6 +3,8 @@ import './Nav.scss'
 import {Link} from "react-scroll"
 import Botao from '../Botao/Botao';
 import Logo from '../img/logo-inteira-verde-modificado.png'
+import {Link as LInkRouter} from "react-router-dom"
+
 
 const Nav = () => {
 
@@ -46,7 +48,7 @@ const Nav = () => {
                 <Link onClick={FecharMenu} to="Acesso" spy={true} smooth={true} offset={-70} duration={500}>Cadastrar</Link>
                 <Link onClick={FecharMenu} to="Acesso" spy={true} smooth={true} offset={-70} duration={500}>Entrar</Link>
                 <Link onClick={FecharMenu} to="Contato" spy={true} smooth={true} offset={-70} duration={500}>Contatos</Link>
-
+                <LInkRouter className="LInkRouter" to="/chamada" onClick={FecharMenu}>Solicitação de Coleta em Lote</LInkRouter>
             </section>
             </nav>
         </div>
