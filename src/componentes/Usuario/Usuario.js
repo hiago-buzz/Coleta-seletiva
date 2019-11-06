@@ -2,11 +2,12 @@ import React, {useState, useEffect} from 'react'
 import "./Usuario.scss"
 import Info from './Info';
 import {Link} from "react-scroll"
-
+import Voltar from "../img/back.png"
 
 const Usuario = () => {
         
     const [data, setData] = useState({})
+    const [noticias, setNoticias] = useState([])
     const [mostrar, setMostrar] = useState(false)              
     const id = localStorage.getItem("id"); 
 
@@ -27,14 +28,26 @@ const Usuario = () => {
       }, [id])  
 
   
-  
+      useEffect(() => {
+        fetch('http://127.0.0.1:8000/api/noticia/', {
+        method:"GET"
+        }).then(result => {
+          return result.json()
+        }).then(noticias => {
+            setNoticias(noticias)
+       }).catch(() => {
+          console.error("Erro, sem conexão")
+        })
+      }, [noticias])  
+
     return (
        <div className="Usuario">
            <header>
-                <Link to="/">Voltar</Link>
+                <Link to="/"> <img src={Voltar} alt="voltar"/> voltar</Link>
            </header>
            <section id="editar">
                <h2>Seja Bem Vindo, {data.nome}</h2>
+               <h3>Perfil</h3>
                <form>
                     <input type="text"  value={data.nome} required/>
                     <input type="text"  value={data.cpf} maxlength="11" required/>
@@ -52,11 +65,16 @@ const Usuario = () => {
            <aside id="informacoes">
                <h2>INFORMAÇÕES</h2>
                <div>
-                   <Info assunto="Horario de Coleta" conteudo="Todas as coletas devem ser realizadas de Segunda, QUarta e Sexta das 8 as 16h e entregue na Rua Antonio Manoel da Costa." />
-                   <Info assunto="Normas de atuação" conteudo="Todas as coletas devem ser realizadas de Segunda, QUarta e Sexta das 8 as 16h e entregue na Rua Antonio Manoel da Costa." />
-               </div>   
+                   {noticias.map((item) =>{
+                       return <Info assunto={item.titulo} conteudo={item.noticia} />
+                    })}
+                   
+                </div>   
 
            </aside>
+           <footer>
+           <h2>Seja Bem Vindo, {data.nome}</h2>
+           </footer>
        </div>
     )
     
