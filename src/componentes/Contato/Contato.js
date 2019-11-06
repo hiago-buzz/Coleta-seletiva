@@ -6,7 +6,7 @@ import Caieiras from '../img/caieiras.png'
 import Instagram from '../img/instagram.png'
 import Logo from '../img/logo-inteira-verde-modificado.png'
 import {Link} from "react-scroll"
-import {Link as LInkRouter} from "react-router-dom"
+
 
 
 
@@ -15,7 +15,7 @@ const Contato = () => {
     return (
         <div className="Contato">
             <div className="info">
-                <LInkRouter to="/chamada"><p>Solicitação de Coleta em Lote</p></LInkRouter>
+                <p>Mobile App</p>
                 <p>Caieiras - São Paulo</p>
                 <Link to="Nav" spy={true} smooth={true} offset={-70} duration={500}><img src={Logo} alt="logo"/></Link>
                 <p>(11) 4445-9200</p>

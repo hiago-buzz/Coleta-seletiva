@@ -31,6 +31,7 @@ const Nav = () => {
                     <Link to="Coleta" spy={true} smooth={true} offset={-70} duration={500}>Pontos de Entrega</Link>
                     <Link to="Noticias" spy={true} smooth={true} offset={-70} duration={500}>Noticias</Link>
                     <Link to="Contato" spy={true} smooth={true} offset={-70} duration={500}>Contatos</Link>
+                    <LInkRouter className="LInkRouter" to="/chamada">Solicitação de Coleta em Lote</LInkRouter>
                     <Link to="Acesso" spy={true} smooth={true} offset={-70} duration={500}> <Botao classe="btn-cadastro">Cadastrar</Botao></Link>
                     <Link to="Acesso" spy={true} smooth={true} offset={-70} duration={500}><Botao>Entrar</Botao></Link>
                 </div>

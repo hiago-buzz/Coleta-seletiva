@@ -1,5 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import './Chamada.scss'
+import {Link} from "react-router-dom"
+import Voltar from "../img/back.png"
+
 
 const Chamada = () => {
 
@@ -37,6 +40,9 @@ const Chamada = () => {
                 <textarea name="Descricao" id="descricao" cols="30" rows="10" placeholder="Insira a descrição da coleta"></textarea>
                 <input type="submit"/>
             </form>
+            <header>
+                <Link to="/"> <img src={Voltar} alt="voltar"/> voltar</Link>
+           </header>
         </div>
     )
 }
