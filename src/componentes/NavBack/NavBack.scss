@@ -1,0 +1,21 @@
+.NavBack{
+    nav{
+    display: flex;
+
+    .voltar{
+        img{
+            background-color: #5ab34f;
+            width: 60px;
+        }
+    }
+    .logo{
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        img{
+            width: 60px;
+        }
+}
+    }
+}

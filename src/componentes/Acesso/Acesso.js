@@ -5,6 +5,8 @@ import CPF from '../img/new-note.png';
 import Email from '../img/envelope.png';
 import Senha from '../img/lock.png';
 import Local from '../img/local.png';
+import {API_URL} from "../../api";
+
 
 const Acesso = () => {
     const nomeRef = React.useRef("");
@@ -22,7 +24,7 @@ const Acesso = () => {
     const criarColetor = (event) => {
         event.preventDefault();
         
-        fetch('http://127.0.0.1:8000/api/coletor/', {
+        fetch(API_URL + '/api/coletor/', {
             method: 'POST',
             body: JSON.stringify({
                 nome: nomeRef.current.value,

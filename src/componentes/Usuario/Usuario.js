@@ -3,6 +3,8 @@ import "./Usuario.scss"
 import Info from './Info';
 import {Link} from "react-router-dom"
 import Voltar from "../img/back.png"
+import {API_URL} from "../../api";
+
 
 const Usuario = () => {
         
@@ -16,7 +18,7 @@ const Usuario = () => {
     };
 
     useEffect(() => {
-        fetch(`http://localhost:8000/api/coletor/${id}/`, {
+        fetch(`${API_URL}/api/coletor/${id}/`, {
         method:"GET"
         }).then(result => {
           return result.json()
@@ -29,7 +31,7 @@ const Usuario = () => {
 
   
       useEffect(() => {
-        fetch('http://127.0.0.1:8000/api/noticia/', {
+        fetch(API_URL + '/api/noticia/', {
         method:"GET"
         }).then(result => {
           return result.json()

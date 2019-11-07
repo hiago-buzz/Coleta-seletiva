@@ -34,6 +34,7 @@ const Nav = () => {
                     <LInkRouter className="LInkRouter" to="/chamada">Solicitação de Coleta em Lote</LInkRouter>
                     <Link to="Acesso" spy={true} smooth={true} offset={-70} duration={500}> <Botao classe="btn-cadastro">Cadastrar</Botao></Link>
                     <Link to="Acesso" spy={true} smooth={true} offset={-70} duration={500}><Botao>Entrar</Botao></Link>
+               
                 </div>
                 <div onClick={AbrirMenu} id="menu-hamburguer">
                     <span className={`${menuAtivo ? "virarX1" : ""}`}></span>

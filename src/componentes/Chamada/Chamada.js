@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './Chamada.scss'
 import {Link} from "react-router-dom"
 import Voltar from "../img/back.png"
+import {API_URL} from "../../api";
 
 
 const Chamada = () => {
@@ -17,8 +18,6 @@ const Chamada = () => {
 
     const [data, SetData] = useState({})
     const [botao, setbotao] = useState(false)
-
-    console.log(cepRef.current.value)
    
     const trocarEstado = ()=>{
       setbotao(!botao)
@@ -38,7 +37,7 @@ const Chamada = () => {
       const criarChamada = (event) => {
         event.preventDefault();
 
-        fetch('http://127.0.0.1:8000/api/chamada/', {
+        fetch(API_URL + '/api/chamada/', {
           method:"POST",
           body: JSON.stringify({
             nome: nomeRef.current.value,  
@@ -82,7 +81,7 @@ const Chamada = () => {
             <form onSubmit={criarChamada}>
                 <input type="text" ref={nomeRef} placeholder="Nome Completo" required/>
                 <div>
-                <input type="text" ref={cepRef}  placeholder="Insira seu CEP e aperte Enter" required/> 
+                <input type="text" ref={cepRef}  placeholder="Insira seu CEP" required/> 
                 <button onClick={trocarEstado}>></button>
                 </div>
                 <input type="text" ref={bairroRef}  value={data.bairro} className="disabled" placeholder="Bairro" disabled />
