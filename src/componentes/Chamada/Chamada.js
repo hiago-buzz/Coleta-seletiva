@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import './Chamada.scss'
-import {Link} from "react-router-dom"
-import Voltar from "../img/back.png"
 import {API_URL} from "../../api";
 import NavBack from '../NavBack/NavBack';
 
@@ -92,11 +90,9 @@ const Chamada = () => {
                 <input type="text" ref={complementoRef} placeholder="Complemento" required/>
                 <input type="text" ref={telefoneRef} placeholder="Telefone" required/>
                 <textarea name="Descricao" ref={descricaoRef} id="descricao" cols="30" rows="10" placeholder="Insira a descrição da coleta" ></textarea>
-                <input type="submit"/>
+                <input type="submit" value="Enviar"/>
             </form>
-            {/* <header>
-                <Link to="/"> <img src={Voltar} alt="voltar"/> voltar</Link>
-           </header> */}
+          
         </div>
     )
 }

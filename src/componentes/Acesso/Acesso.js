@@ -88,7 +88,7 @@ const Acesso = () => {
                 </div>
                 <div className="ipt-register">
                 <img src={Senha} alt="senha"/>
-                <input className="ipt" ref={senhaRef} placeholder="    Senha" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Sua senha deve conter  8 ou mais caracteres com pelo menos um número e uma letra maiúscula e minúscula"/>
+                <input className="ipt" ref={senhaRef} placeholder="    Senha" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Sua senha deve conter  8 ou mais caracteres com pelo menos um número e uma letra maiúscula e minúscula"/>   
                 </div>
                
                 <input className="ipt-sub" type="submit" value="Cadastrar"/>
