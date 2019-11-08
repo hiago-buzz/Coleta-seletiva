@@ -3,6 +3,7 @@ import './Chamada.scss'
 import {Link} from "react-router-dom"
 import Voltar from "../img/back.png"
 import {API_URL} from "../../api";
+import NavBack from '../NavBack/NavBack';
 
 
 const Chamada = () => {
@@ -76,6 +77,7 @@ const Chamada = () => {
     
     return (
         <div className="Chamada">
+            <NavBack />
             <h2>Solicitação de Coleta</h2>
             <p>Insira suas informações e a descrição do tipo de coleta personalizada</p>
             <form onSubmit={criarChamada}>
@@ -92,9 +94,9 @@ const Chamada = () => {
                 <textarea name="Descricao" ref={descricaoRef} id="descricao" cols="30" rows="10" placeholder="Insira a descrição da coleta" ></textarea>
                 <input type="submit"/>
             </form>
-            <header>
+            {/* <header>
                 <Link to="/"> <img src={Voltar} alt="voltar"/> voltar</Link>
-           </header>
+           </header> */}
         </div>
     )
 }

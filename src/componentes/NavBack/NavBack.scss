@@ -1,11 +1,16 @@
 .NavBack{
+    width: 100%;
+    background-color: white;
     nav{
     display: flex;
-
     .voltar{
+        height: 50px;
         img{
             background-color: #5ab34f;
-            width: 60px;
+            width: 40px;
+            padding: 5px 0px;
+            margin: 0%;
+            
         }
     }
     .logo{
@@ -14,7 +19,9 @@
         justify-content: flex-end;
         align-items: center;
         img{
-            width: 60px;
+            width: 40px;
+          
+           
         }
 }
     }

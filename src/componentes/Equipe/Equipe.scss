@@ -1,0 +1,15 @@
+.Equipe{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+
+    header{
+        display:flex;
+        justify-content: center;
+        width: 100%;
+        h2{
+            text-align: center;
+        }
+    }
+}
