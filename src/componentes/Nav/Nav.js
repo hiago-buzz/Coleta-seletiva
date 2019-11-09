@@ -32,6 +32,7 @@ const Nav = () => {
                     <Link to="Noticias" spy={true} smooth={true} offset={-70} duration={500}>Noticias</Link>
                     <Link to="Contato" spy={true} smooth={true} offset={-70} duration={500}>Contatos</Link>
                     <LInkRouter className="LInkRouter" to="/chamada">Solicitação de Coleta em Lote</LInkRouter>
+                    <LInkRouter className="LInkRouter" to="/equipe">Desenvolvedores</LInkRouter>
                     <Link to="Acesso" spy={true} smooth={true} offset={-70} duration={500}> <Botao classe="btn-cadastro">Cadastrar</Botao></Link>
                     <Link to="Acesso" spy={true} smooth={true} offset={-70} duration={500}><Botao>Entrar</Botao></Link>
                
@@ -51,6 +52,7 @@ const Nav = () => {
                 <Link onClick={FecharMenu} to="Acesso" spy={true} smooth={true} offset={-70} duration={500}>Entrar</Link>
                 <Link onClick={FecharMenu} to="Contato" spy={true} smooth={true} offset={-70} duration={500}>Contatos</Link>
                 <LInkRouter className="LInkRouter" to="/chamada" onClick={FecharMenu}>Solicitação de Coleta em Lote</LInkRouter>
+                <LInkRouter className="LInkRouter" to="/equipe" onClick={FecharMenu}>Desenvolvedores</LInkRouter>
             </section>
             </nav>
         </div>

@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import './Banner.scss'
-import a from "../img/carrosel1.jpg";
-import b from "../img/carrosel2.jpg";
-import c from "../img/carrosel3.jpg";
-import d from "../img/carrosel4.jpg";
+import a from "../img/posto1.jpg";
+import b from "../img/posto2.jpg";
+import c from "../img/posto3.jpg";
+import d from "../img/posto4.jpg";
+
 import Back from "../img/back.png";
 import Next from "../img/next.png";
 
