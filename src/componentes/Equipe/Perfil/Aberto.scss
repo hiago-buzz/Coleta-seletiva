@@ -1,0 +1,28 @@
+.aberto{
+    font-family: 'Montserrat', sans-serif;
+     width: 100%; 
+     display: flex;
+     justify-content: center;
+        div{
+            background-color: #5abe4f;
+            margin-bottom: 20px;
+            width: 300px;
+        h2{
+            text-align: center; 
+            color:white;
+        }
+        p{
+            color:#eeeeee;
+            font-size: 10pt;
+            text-align: center;
+        }
+    }
+}
+.linksRede{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    img{
+        width: 30px;
+    }
+}
