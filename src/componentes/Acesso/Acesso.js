@@ -106,6 +106,7 @@ const Acesso = () => {
                         <img src={Senha} alt="senha"/>
                         <input className="ipt" placeholder="    Senha" type={(mostrar ? "text" : "password")} pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Sua senha deve conter  8 ou mais caracteres com pelo menos um número e uma letra maiúscula e minúscula"/>
                     </div>
+                        <div class="g-recaptcha" data-sitekey="6Lcc1cEUAAAAAFjBdVR_CYFNT5MGjmuz3c4WjWip"></div>
                     <div className="checkSenha">
                         <input type="checkbox" value="mostrar senha"   onChange={MostrarSenha}/>
                         <label htmlFor="mostrar-senha">Mostrar senha</label>
