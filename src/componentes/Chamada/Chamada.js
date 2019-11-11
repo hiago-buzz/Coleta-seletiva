@@ -36,7 +36,7 @@ const Chamada = () => {
       const criarChamada = (event) => {
         event.preventDefault();
 
-        fetch(API_URL + '/api/chamada/', {
+        fetch(API_URL + 'api/chamada/', {
           method:"POST",
           body: JSON.stringify({
             nome: nomeRef.current.value,  

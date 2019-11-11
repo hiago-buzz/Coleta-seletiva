@@ -18,7 +18,7 @@ const Usuario = () => {
     };
 
     useEffect(() => {
-        fetch(`${API_URL}/api/coletor/${id}/`, {
+        fetch(`${API_URL}api/coletor/${id}/`, {
         method:"GET"
         }).then(result => {
           return result.json()
@@ -31,7 +31,7 @@ const Usuario = () => {
 
   
       useEffect(() => {
-        fetch(API_URL + '/api/noticia/', {
+        fetch(API_URL + 'api/noticia/', {
         method:"GET"
         }).then(result => {
           return result.json()

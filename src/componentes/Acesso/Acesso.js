@@ -24,7 +24,7 @@ const Acesso = () => {
     const criarColetor = (event) => {
         event.preventDefault();
         
-        fetch(API_URL + '/api/coletor/', {
+        fetch(API_URL + 'api/coletor/', {
             method: 'POST',
             body: JSON.stringify({
                 nome: nomeRef.current.value,
