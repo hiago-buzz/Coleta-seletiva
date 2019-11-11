@@ -75,10 +75,10 @@ const Chamada = () => {
     
     return (
         <div className="Chamada">
-            <NavBack />
-            <h2>Solicitação de Coleta</h2>
-            <p>Insira suas informações e a descrição do tipo de coleta personalizada</p>
-            <form onSubmit={criarChamada}>
+              <NavBack />
+              <h2>Solicitação de Coleta</h2>
+              <p>Insira suas informações e a descrição do tipo de coleta personalizada</p>
+              <form onSubmit={criarChamada}>
                 <input type="text" ref={nomeRef} placeholder="Nome Completo" required/>
                 <div>
                 <input type="text" ref={cepRef}  placeholder="Insira seu CEP" required/> 
