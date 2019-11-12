@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import "./Usuario.scss"
-import Info from './Info';
 import {Link} from "react-router-dom"
-import Voltar from "../img/back.png"
+import Info from './Info';
 import {API_URL} from "../../api";
-
+import NavBack from '../NavBack/NavBack';
+import Lista from '../Lista/Lista';
 
 const Usuario = () => {
         
@@ -44,9 +44,7 @@ const Usuario = () => {
 
     return (
        <div className="Usuario">
-           <header>
-                <Link to="/"> <img src={Voltar} alt="voltar"/> voltar</Link>
-           </header>
+         
            <section id="editar">
                <h2>Seja Bem Vindo, {data.nome}</h2>
                <h3>Perfil</h3>
@@ -62,13 +60,13 @@ const Usuario = () => {
                     </div>     
                     <input type="submit" value="Salvar"/>       
                </form>
-                   
+                   <Link to="Lista"><input type="button" value="Solicitações" /></Link>
            </section>
            <aside id="informacoes">
                <h2>INFORMAÇÕES</h2>
                <div>
                    {noticias.map((item) =>{
-                       return <Info assunto={item.titulo} conteudo={item.noticia} />
+                       return <Info key="dsds" assunto={item.titulo} conteudo={item.noticia} />
                     })}
                    
                 </div>   
@@ -77,6 +75,7 @@ const Usuario = () => {
            <footer>
            <h2>Seja Bem Vindo, {data.nome}</h2>
            </footer>
+           <NavBack />
        </div>
     )
     

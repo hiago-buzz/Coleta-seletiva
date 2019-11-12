@@ -1,9 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import './Equipe.scss'
 import NavBack from '../NavBack/NavBack';
 import Perfil from './Perfil/Perfil';
 import Aberto from './Perfil/Aberto';
-import imagemuser from '../img/perfil.jpg'
 import hiago from '../img/hiago.png'
 import lucas from '../img/lucas.jpg'
 import jessica from '../img/jessica.jpeg'

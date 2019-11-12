@@ -4,6 +4,7 @@ import Home from './componentes/Home/Home';
 import Chamada from './componentes/Chamada/Chamada';
 import Usuario from './componentes/Usuario/Usuario';
 import Equipe from './componentes/Equipe/Equipe';
+import Lista from './componentes/Lista/Lista';
 
 // import './App.scss';
 
@@ -16,6 +17,7 @@ const App = () => {
     <Route exact path="/login" component={Usuario} />
     <Route exact path="/chamada" component={Chamada} />
     <Route exact path="/equipe" component={Equipe}/>
+    <Route exact path="/lista" component={Lista}/>
  
     </BrowserRouter>
 

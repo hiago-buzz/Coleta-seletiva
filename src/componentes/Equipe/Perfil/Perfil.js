@@ -1,8 +1,6 @@
 import React from 'react'
 import "./Perfil.scss"
-import linkdn from "../../img/linkedin.png"
-import whatsapp from "../../img/whatsapp.png"
-import github from "../../img/github.png"
+
 
 const Perfil = ({imagemPerfil, nomePerfil, pop, click, saturacao}) => {
       
