@@ -12,9 +12,14 @@ const Usuario = () => {
     const [noticias, setNoticias] = useState([])
     const [mostrar, setMostrar] = useState(false)              
     const id = localStorage.getItem("id"); 
+    const [editar, setEditar] = useState(false)
 
     const MostrarSenha = () => {
         setMostrar(!mostrar);
+    };
+
+    const EditarPerfil = ()=>{
+      setEditar(!editar);
     };
 
     useEffect(() => {
@@ -47,8 +52,8 @@ const Usuario = () => {
          
            <section id="editar">
                <h2>Seja Bem Vindo, {data.nome}</h2>
-               <h3>Perfil</h3>
-               <form>
+               <form style={(!editar ? {display: "none"} : {display: "flex"})}>
+                    <h3>Perfil</h3>  
                     <input type="text"  value={data.nome} required/>
                     <input type="text"  value={data.cpf} maxlength="11" required/>
                     <input type="text" value={data.bairro} required/>
@@ -60,15 +65,20 @@ const Usuario = () => {
                     </div>     
                     <input type="submit" value="Salvar"/>       
                </form>
+                  <div>
+
+                    <input className="editar" type="button" value="editar" onClick={EditarPerfil}/>       
                    <Link to="Lista"><input type="button" value="Solicitações" /></Link>
+                  </div>
            </section>
            <aside id="informacoes">
                <h2>INFORMAÇÕES</h2>
                <div>
                    {noticias.map((item) =>{
                        return <Info key="dsds" assunto={item.titulo} conteudo={item.noticia} />
-                    })}
-                   
+                    })
+                    }
+
                 </div>   
 
            </aside>
