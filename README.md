@@ -2,20 +2,20 @@
 ---
 
 ## Descrição
----
 
-### O nosso projeto tem como objetivo trazer informações sobre o descarte correto de lixo, e com isso informando sobre a coleta seletiva na cidade de Caieiras.
-### Esse projeto tem como foco principal dar a facilidade aos catadores em relação a separação do lixo, aonde coletar, para onde entregar, saber os endereços dos pontos de entregas, de atender a chamada de quem quer fazer a entrega de quantidade maior de materiais, divulgação visual do trabalho, e a possibilidade de comunicação da cooperativa e da população.
+- O nosso projeto tem como objetivo trazer informações sobre o descarte correto de lixo, e com isso informando sobre a coleta seletiva na cidade de Caieiras.
+- Esse projeto tem como foco principal dar a facilidade aos catadores em relação a separação do lixo, aonde coletar, para onde entregar, saber os endereços dos pontos de entregas, de atender a chamada de quem quer fazer a entrega de quantidade maior de materiais, divulgação visual do trabalho, e a possibilidade de comunicação da cooperativa e da população.
+
 ---
 
 # Linguagens Utilizadas 
----
 
-### React
+- Biblioteca `React.js` de `JavaScript`.
+- Framework `Django` e `Django REST` de `Python`.
+
 ---
 
 # Como acessar nosso projeto
----
 
 - 1.  clone esse repositório 
 - 2.  logo após clonar, vá até o terminal e digite `git clone` e cole o link do repositório
