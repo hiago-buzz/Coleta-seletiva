@@ -1,25 +1,20 @@
 import React from 'react'
 import './Dicas.scss'
 import Topico from './Topico';
+import Papel from "../img/paper-bin.png"
+import Plastico from "../img/plastic.png"
+import Metal from "../img/metal.png"
+import Vidro from "../img/glass-bin.png"
 
 const Dicas = () => {
     return (
         <div className="Dicas">
-            <section id="#descricao" className="descricao">
-              <article>
-                <div>
-                    <h1>O QUE PODE SER RECICLADO?</h1>
-                </div>
-                <div className="topic">
-                    <Topico titulo="Vidro" a="Potes de vidro" b="Copos" c="Garrafas" d="Embalagens de molho" e="Frascos de vidro" />
-                    <Topico titulo="Plástico" a="Tampas" b="Potes de alimento" c="PET" d="Recipientes de limpeza" e="Sacos plásticos" />
-                    <Topico titulo="Metal" a="Latas de aluminio" b="Latas de aço" c="Ferragens" d="Arame" e="Canos" />
-                    <Topico titulo="Papel" a="Jornais" b="Revistas" c="Papelão" d="Envelopes" e="Rascunhos escritos" />
-                   
-                </div>
-            
-                </article>
-              
+            <section >
+                <Topico material={Papel} titulo="PAPEL" a="copos de água" b="Salocas" c="Garrafas Pet" d="Isopor" e="Embalagens"/>
+                <Topico material={Plastico} titulo="PLASTICO" a="copos de água" b="Salocas" c="Garrafas Pet" d="Isopor" e="Embalagens"/>
+                <Topico material={Vidro} titulo="VIDRO" a="copos de água" b="Salocas" c="Garrafas Pet" d="Isopor" e="Embalagens"/>
+                <Topico material={Metal} titulo="METAL" a="copos de água" b="Salocas" c="Garrafas Pet" d="Isopor" e="Embalagens"/>
+
             </section>
 
         </div>
