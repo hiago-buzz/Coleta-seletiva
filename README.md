@@ -18,14 +18,14 @@
 ---
 
 - 1.  clone esse repositório 
-- 2.  logo após clonar, vá até o terminal e digite _git clone_ e cole o link do repositório
-- 3.  a seguir use o _nvm 10.16.3_
-- 4.  e logo após vocẽ digitará o comando _npm start_
-- 5.  se der algum erro você digitará _npm install_
-- 6.  logo á seguir _rebuild node-sass_
+- 2.  logo após clonar, vá até o terminal e digite `git clone` e cole o link do repositório
+- 3.  a seguir use o `nvm 10.16.3`
+- 4.  e logo após vocẽ digitará o comando `npm start`
+- 5.  se der algum erro você digitará `npm install`
+- 6.  logo á seguir `rebuild node-sass`
 - 7.  e após clonar o link do repositorio do back-end
-- 8.  no terminal crie um ambiente virtual comando: _python3 -m venv env_
-- 9.  ative o ambiente _source env/bin/activate_
-- 10. para instalar os requirements o comando é _pip install -r requirements.txt_
-- 11. para rodar o servidor _python manage.py runserver_
-- 12. caso não tenha o banco de dados digite os seguintes comandos _python manage.py makemigrations_ e _python manage.py migrate_
+- 8.  no terminal crie um ambiente virtual comando: `python3 -m venv env`
+- 9.  ative o ambiente `source env/bin/activate`
+- 10. para instalar os requirements o comando é `pip install -r requirements.txt`
+- 11. para rodar o servidor `python manage.py runserver`
+- 12. caso não tenha o banco de dados digite os seguintes comandos `python manage.py makemigrations` e `python manage.py migrate`
