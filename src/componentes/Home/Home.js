@@ -7,6 +7,7 @@ import Noticias from '../Noticias/Noticias';
 import Coleta from '../Coleta/Coleta';
 import Contato from '../Contato/Contato';
 import Nav from '../Nav/Nav';
+import Calendario from '../Calendario/Calendario';
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <Dicas />
             <Coleta />
             <Noticias />
+            {/* <Calendario /> */}
             <Acesso />
             <Contato />
         </div>
