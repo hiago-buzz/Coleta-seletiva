@@ -1,7 +1,7 @@
-#Coleta Seletiva
+# Coleta Seletiva
 ---
 
-##Descrição
+## Descrição
 ---
 
 ### O nosso projeto tem como objetivo trazer informações sobre o descarte correto de lixo, e com isso informando sobre a coleta seletiva na cidade de Caieiras.
@@ -11,10 +11,10 @@
 # Linguagens Utilizadas 
 ---
 
-###React
+### React
 ---
 
-#Como acessar nosso projeto
+# Como acessar nosso projeto
 ---
 
 -1.  clone esse repositório 
