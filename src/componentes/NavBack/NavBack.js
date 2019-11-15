@@ -1,6 +1,6 @@
 import React from 'react'
 import Voltar from '../img/back.png'
-import Logo from '../img/logo-Renova-verde.png'
+import Logo from '../img/logo.png'
 import './NavBack.scss'
 import { Link } from 'react-router-dom'
 

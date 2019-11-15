@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import './Acesso.scss';
 import Nome from '../img/man-user.png';
 import CPF from '../img/new-note.png';
@@ -14,6 +15,9 @@ const Acesso = () => {
     const bairroRef = React.useRef("");
     const emailRef = React.useRef("");
     const senhaRef = React.useRef("");
+
+    const emailLoginRef = React.useRef('');
+    const senhaLoginRef = React.useRef('');
 
     const [mostrar, setMostrar] = useState(false)              
 
@@ -43,12 +47,12 @@ const Acesso = () => {
                 
                 alert("Cadastrado com sucesso!")
                 localStorage.setItem("id", value.id)
-                window.location = "/login"
+                // window.location = "/login"
 
             } else {
                 alert("houve um erro")
             }
-
+        
             nomeRef.current.value = "";
             cpfRef.current.value = "";
             emailRef.current.value = "";
@@ -100,21 +104,22 @@ const Acesso = () => {
                 <form>
                     <div>
                         <img src={Email} alt="email"/>
-                        <input className="ipt" placeholder="    Email" type="email"/>
+                        <input className="ipt" ref={emailLoginRef} placeholder="    Email" type="email" required/>
                     </div>
                     <div>
                         <img src={Senha} alt="senha"/>
-                        <input className="ipt" placeholder="    Senha" type={(mostrar ? "text" : "password")} pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Sua senha deve conter  8 ou mais caracteres com pelo menos um número e uma letra maiúscula e minúscula"/>
+                        <input className="ipt" ref={senhaLoginRef} placeholder="    Senha" type={(mostrar ? "text" : "password")} pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Sua senha deve conter  8 ou mais caracteres com pelo menos um número e uma letra maiúscula e minúscula" required/>
                     </div>
                         {/* <div class="g-recaptcha" data-sitekey="6Lcc1cEUAAAAAFjBdVR_CYFNT5MGjmuz3c4WjWip"></div> */}
                     <div className="checkSenha">
-                        <input type="checkbox" value="mostrar senha"   onChange={MostrarSenha}/>
+                        <input type="checkbox" value="mostrar senha"   onChange={MostrarSenha} />
                         <label htmlFor="mostrar-senha">Mostrar senha</label>
                     </div>
-                        <input className="ipt-sub" type="submit" value="Entrar"/>
+                        <Link to={emailLoginRef && senhaLoginRef !== "" ? "login" : "#"} ><input className="ipt-sub" type="submit" value="Entrar" /></Link>
                 </form>
             </section>
         </div>
+
     )
 }
 

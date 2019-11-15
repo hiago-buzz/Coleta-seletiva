@@ -3,11 +3,11 @@ import './Equipe.scss'
 import NavBack from '../NavBack/NavBack';
 import Perfil from './Perfil/Perfil';
 import Aberto from './Perfil/Aberto';
-import hiago from '../img/hiago.png'
-import lucas from '../img/lucas.jpg'
-import jessica from '../img/jessica.jpeg'
+import hiago from '../img/hiago.JPG'
+import lucas from '../img/lucas.JPG'
+import jessica from '../img/jessica.JPG'
 import roger from '../img/roger.jpeg'
-import renan from '../img/renan.jpeg'
+import renan from '../img/renan.JPG'
 
 
 const Equipe = () => {
@@ -78,7 +78,7 @@ const Equipe = () => {
          <header>
              <h2>EQUIPE DE DESENVOLVEDORES</h2>
          </header>
-         <Perfil imagemPerfil={hiago} nomePerfil="HIAGO - DEV FULLSTACK" pop={!mostrar ? "+" :"-"}  click={trocarUm} />
+         <Perfil imagemPerfil={hiago}  nomePerfil="HIAGO - DEV FULLSTACK" pop={!mostrar ? "+" :"-"}  click={trocarUm} />
          <Aberto style={!mostrar ? {display: "none"} : {display:"flex"}} nomeCompleto="Cícero Hiago Santos" descricaoPerfil="Desenvolvedor Fullstack com Foco em React.js e Django REST." linkLinkedin="https://www.linkedin.com/in/hiagosantos" linkGithub="https://github.com/hiago-buzz" linkWhatsapp="https://api.whatsapp.com/send?l=pt&phone=5511944632951" emailPerfil="hiago.dev@gmail.com"/>
          
          <Perfil imagemPerfil={lucas} nomePerfil="LUCAS - DEV FULLSTACK" pop={!mostrar2 ? "+" :"-"}  click={trocarDois} />
